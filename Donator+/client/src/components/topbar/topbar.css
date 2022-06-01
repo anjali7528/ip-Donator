@@ -10,10 +10,9 @@
     margin:0;
     display:flex;
     align-items:center;
-    font-family:cursive;
+    font-family: 'Josefin Sans', sans-serif;
     background-color:#fff;
     z-index: 999;
-   
 }
 
 .topLeft{
@@ -60,7 +59,7 @@
 .topListItem{
     margin-right: 20px;
     font-size:18px;
-    font-weight: 300;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -85,8 +84,9 @@
 .topusername{
     margin-left:5%;
     cursor:pointer;
-    font-weight: bold;
+    font-weight:bolder;
     font-size: large;
+    font-variant: small-caps;
 }
 
 .line{
