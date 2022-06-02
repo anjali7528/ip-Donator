@@ -16,7 +16,7 @@ export default function Topbar() {
             <div className='topListItem'>HOME</div>
             <div className='topListItem'>ABOUT</div>
             <div className='topListItem'>CONTACT </div>
-            <div className='topListItem'>WRITE</div>
+            <div className='topListItem'>DEVELOPER </div>
             <div className='topListItem'>LOGOUT</div>
         </div>
     </div>
