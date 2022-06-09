@@ -17,7 +17,7 @@ function Sidebar() {
     <ul className='sidebarList'> 
     <li>Date of Birth: 24/08/2001/F</li>
     <li>Blood Group: O+</li>
-    <li>Contact:872002408</li>
+    <li>Contact:8725002408</li>
     <li>Aadhar Id: 12346789001</li>
         </ul>
     </div>
