@@ -1,8 +1,9 @@
 import React from 'react'
-import Boxes from '../boxes/Boxes';
-import Sidebar from '../sidebar/Sidebar';
+
+import Sidebar from '../../components/sidebar/Sidebar';
+import UserDash from '../../components/UserDashboard/UserDash';
 import './home.css';
-import Footbar from '../footbar/Footbar';
+
 
 
 function Home() {
@@ -14,10 +15,10 @@ function Home() {
     </div>
     <div className='mainpage'>
     <div className='boxes'>
-    <Boxes/>
+    <UserDash/>
     </div>
     <div className="footbarDiv">
-    <Footbar/>
+
     </div>
     </div>
     

@@ -4,7 +4,6 @@
 
 .home{
     display: flex;
-    background-color: #faf3ee;
 }
 .sidebarDiv{
     display: flex;
@@ -14,14 +13,22 @@
 }
 
 .boxes{
-    display: flex;
-    flex-direction: row;
-    flex:10
+  margin: 250px 20px 0px 100px;
 }
+
+@media only screen and (max-width: 720px) {
+    .boxes{
+        margin: 60px 20px 0px 100px;
+    }
+  }
+
+
+
 
 
 .footbarDiv{
     display: flex;
     flex-direction: column;
+    flex:10;
     
 }

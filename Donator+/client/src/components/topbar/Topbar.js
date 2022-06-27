@@ -1,34 +1,35 @@
-import React ,{useContext}from 'react'
-import './topbar.css'
-import { Link } from 'react-router-dom';
-import logo from '../../images/logo1.png'
+import React from 'react'
+import {Navbar, Container,Nav,NavDropdown} from 'react-bootstrap';
 
-export default function Topbar() {
+
+const Topbar = () => {
   return (
-    <>
-    <div className='top'>
-
-    <div className='topLeft'>
-    <img src= {logo} className="logo"/>
+    <div>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Container>
+  <Navbar.Brand href="#home">Donator+</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Nav.Link href="#features">HOME</Nav.Link>
+      <Nav.Link href="#pricing">ABOUT</Nav.Link>
+      <Nav.Link href="#pricing">CONTACT</Nav.Link>
+      <Nav.Link href="#pricing">DEVELOPER</Nav.Link>
+     
+    </Nav>
+    <Nav>
+    <NavDropdown title="LOGIN" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">HOSPITAL</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">DONER</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Government Hospitals</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
     </div>
-    <div className='topCenter'>
-        <div className='topList'>
-            <div className='topListItem'>HOME</div>
-            <div className='topListItem'>ABOUT</div>
-            <div className='topListItem'>CONTACT </div>
-            <div className='topListItem'>DEVELOPER </div>
-            <div className='topListItem'>LOGOUT</div>
-        </div>
-    </div>
-    <div className='topRight'>
-        <img className="topImage" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="profile image" />
-        <span className='topusername'>Anjali</span>
-
-    </div>
-</div>
- <div className='line'></div>
- </>
   )
-  
 }
 
+export default Topbar
