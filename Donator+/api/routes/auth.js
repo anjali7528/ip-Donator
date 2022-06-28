@@ -13,7 +13,7 @@ router.post("/register/user", async(req,res)=>{
          
         const salt = await bcrypt.genSalt(10);
         const hashedPass = await bcrypt.hash(req.body.password,salt);
-          const newUser = new teacherSchema({
+          const newUser = new userSchema({
 
               username: req.body.username,
               email: req.body.email,
@@ -36,7 +36,7 @@ router.post("/register/user", async(req,res)=>{
 //LoginUser
 router.post("/login/user",async(req,res) => {
     try{
-        const user = await teacherSchema.findOne({AadharID: req.body.id})
+        const user = await userSchema.findOne({AadharID: req.body.id})
         if(!user) return next(createError(404,"User not found!"))
         const validate = await bcrypt.compare(req.body.password, user.password)
 
@@ -64,7 +64,7 @@ router.post("/register/hospital", async(req,res)=>{
          
         const salt = await bcrypt.genSalt(10);
         const hashedPass = await bcrypt.hash(req.body.password,salt);
-          const newUser = new studentSchema({
+          const newUser = new hospitalSchema({
               username: req.body.username,
               RegistrationID: req.body.id,
               PhoneNumber: req.body.phone,
@@ -85,7 +85,7 @@ router.post("/login/hospital",async(req,res) => {
 
     
     try{
-          const user = await studentSchema.findOne({RegistrationID: req.body.id})
+          const user = await hospitalSchema.findOne({RegistrationID: req.body.id})
           !user && res.status(400).json("Wrong credentials!")
 
           const validate = await bcrypt.compare(req.body.password, user.password)
