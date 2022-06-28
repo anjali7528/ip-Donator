@@ -42,6 +42,20 @@ const Hsignup = () => {
 
       <label htmlFor="floatingInputCustom">Hospital Registration Number</label>
   </Form.Floating> 
+
+  <Form.Floating className="mb-3">
+    <Form.Control
+      id="floatingInputCustom"
+      type="text"
+     
+    />
+
+
+
+      <label htmlFor="floatingInputCustom">Address</label>
+  </Form.Floating> 
+
+
   <Form.Floating className="mb-3">
     <Form.Control
       id="floatingInputCustom"
