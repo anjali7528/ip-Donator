@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TopBar from './components/topbar/Topbar'
 import Donate from './pages/Donate/Donate';
 import HospitalDash from './pages/Hospitalhome/HospitalDash';
+import HospitalLogin from './pages/hospitalLogin/HospitalLogin';
 import Profile from './pages/profile/Profile';
 import Home from './pages/Userhome/Home';
 import Ulogin from './pages/userlogin/Ulogin';
@@ -17,7 +18,8 @@ function App() {
       {/* <Uregister/> */}
       {/* <Profile/> */}
       {/* <Donate/> */}
-      <HospitalDash/>
+      <HospitalLogin/>
+      
     </div>
   );
 }
