@@ -16,11 +16,11 @@ function App() {
       <TopBar/>
       {/* <Home/> */}
       {/* <Ulogin/> */}
-      {/* <Uregister/> */}
+      <Uregister/>
       {/* <Profile/> */}
       {/* <Donate/> */}
       {/* <HospitalLogin/> */}
-      <Hregister/>
+      {/* <Hregister/> */}
     </div>
   );
 }
